@@ -23,7 +23,6 @@ class App extends Component {
                 <Route  path='/page1' component={Page1} />
                 <Route  path='/page2' component={Page2} />
                 <Route  path='/page3' component={Page3} />
-                <Route render={() => <h3>No Match</h3>} />
               </Switch>
             </div>
         </div> 
