@@ -600,7 +600,7 @@ p.codrops-demos a.current-demo:hover{
 
 `
 
-export default class Page1 extends Component {
+export default class LandingPage extends Component {
   render() {
     return (
       <MainDiv classNameName="page1 bgSlideshowPage" >

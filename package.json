@@ -2,9 +2,11 @@
   "name": "topshelfmusic",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jwgravesfl.github.io/revelermusic",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "eslint": "^5.5.0",
+    "gh-pages": "^2.0.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-router-dom": "^4.3.1",
@@ -15,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   }
 }
