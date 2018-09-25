@@ -26,17 +26,20 @@ class App extends Component {
   render() {
     return (
       
-      <AppDiv className="app" >
-        <NavBar />
-        <BrowserRouter>
+      
+        
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <AppDiv className="app" >
+         <NavBar />
               <Switch>
                 <Route path='/' exact component={Home} />
                 <Route  path='/page1' component={Page1} />
                 <Route  path='/page2' component={Page2} />
                 <Route  path='/page3' component={Page3} />
               </Switch>
+              </AppDiv> 
               </BrowserRouter>
-        </AppDiv> 
+        
         
      
 
