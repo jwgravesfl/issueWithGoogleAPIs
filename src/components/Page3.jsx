@@ -1,11 +1,14 @@
 import React from 'react'
 
-import portfolio1img from '../assets/FL.jpg'
-import portfolio2img from '../assets/Crowbar.jpg'
-import portfolio3img from '../assets/MoSS.jpg'
-import portfolio4img from '../assets/FoxnHound.jpg'
-import portfolio5img from '../assets/Gaspars.jpg'
-import portfolio6img from '../assets/LooseysGood.jpg'
+import portfolio1img from '../assets/landingPage.jpg'
+import portfolio2img from '../assets/MoSS.jpg'
+import portfolio3img from '../assets/FL.jpg'
+import portfolio4img from '../assets/Crowbar.jpg'
+import portfolio5img from '../assets/dJ.jpg'
+import portfolio6img from '../assets/DJMixerLaptops.jpg'
+
+import CDimg from '../assets/421CDLogo.png'
+import JHimg from '../assets/J&Heather.png'
 
 import styled from 'styled-components'
 
@@ -73,6 +76,21 @@ const Page3Div = styled.div `
         font-size: 22px;
       }
     }
+
+    .jhImg {
+      img {
+        height: 15vh;
+      }
+    
+      margin-top: 5vh;
+    }
+
+    .cdImg {
+      margin-bottom: 5vh;
+      img {
+        height: 10vh;
+      }
+    }
 `
 
 const Page3 = () => (
@@ -86,10 +104,10 @@ const Page3 = () => (
               <div className="portfolio-box-caption">
                 <div className="portfolio-box-caption-content">
                   <div className="project-category text-faded">
-                    Category
+                    Family Friendly and 21+ Live Music
                   </div>
                   <div className="project-name">
-                    Project Name
+                    Any English Genre
                   </div>
                 </div>
               </div>
@@ -101,10 +119,10 @@ const Page3 = () => (
               <div className="portfolio-box-caption">
                 <div className="portfolio-box-caption-content">
                   <div className="project-category text-faded">
-                    Category
+                    Corporate, Wedding, Family Live Music Show
                   </div>
-                  <div className="project-name">
-                    Project Name
+                  <div className="project-name jhImg">
+                  <img src={JHimg} alt="J&Heather Logo" className="" />
                   </div>
                 </div>
               </div>
@@ -116,10 +134,10 @@ const Page3 = () => (
               <div className="portfolio-box-caption">
                 <div className="portfolio-box-caption-content">
                   <div className="project-category text-faded">
-                    Category
+                    21+ Live Music Show
                   </div>
-                  <div className="project-name">
-                    Project Name
+                  <div className="project-name cdImg">
+                  <img src={CDimg} alt="Cowboy Drive Logo" className="" />
                   </div>
                 </div>
               </div>
@@ -131,10 +149,10 @@ const Page3 = () => (
               <div className="portfolio-box-caption">
                 <div className="portfolio-box-caption-content">
                   <div className="project-category text-faded">
-                    Category
+                    Open Mics
                   </div>
                   <div className="project-name">
-                    Project Name
+                  With professional equipment, Reveler Music provides an amazing atmosphere for beginner to advanced musicians.
                   </div>
                 </div>
               </div>
@@ -146,10 +164,10 @@ const Page3 = () => (
               <div className="portfolio-box-caption">
                 <div className="portfolio-box-caption-content">
                   <div className="project-category text-faded">
-                    Category
+                    Karaoke
                   </div>
                   <div className="project-name">
-                    Project Name
+                    With professional equipment and 77,000+ song selections, Reveler Music keeps the party rolling.
                   </div>
                 </div>
               </div>
@@ -161,10 +179,10 @@ const Page3 = () => (
               <div className="portfolio-box-caption">
                 <div className="portfolio-box-caption-content">
                   <div className="project-category text-faded">
-                    Category
+                    DJ
                   </div>
                   <div className="project-name">
-                    Project Name
+                    With professional equipment, Reveler Music creates the atmosphere of the moment.  Any Genre.  
                   </div>
                 </div>
               </div>

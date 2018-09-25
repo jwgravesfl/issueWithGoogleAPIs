@@ -7,7 +7,7 @@ import bgImg5 from '../assets/dJ.jpg'
 import bgImg6 from '../assets/DJMixerLaptops.jpg'
 import bgImg3 from '../assets/FL.jpg'
 import bgImg2 from '../assets/MoSS.jpg'
-import bgImg1 from '../assets/LooseysGood.jpg'
+import bgImg1 from '../assets/landingPage.jpg'
 
 import CDimg from '../assets/421CDLogo.png'
 import JHimg from '../assets/J&Heather.png'
@@ -576,11 +576,11 @@ p.codrops-demos a.current-demo:hover{
 		height: 15vh;
 	}
 
-	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 .cdImg {
-	margin-top: 5vh;
+	margin-bottom: 5vh;
 	height: 10vh;
 }
 
@@ -628,9 +628,9 @@ export default class LandingPage extends Component {
     return (
       <MainDiv classNameName="page1 bgSlideshowPage" >
       <ul className="cb-slideshow">
-	  		<li><span className="jhImg" ><img src={JHimg} alt="J&Heather Logo" /></span><div><h3 className="img1Words" >Corporate, Wedding, Family or 21+ Music</h3></div> </li>
-	  		<li><span className="jhImg" ><img src={JHimg} alt="J&Heather" className="jhImg"/></span><div><h3>Family Friendly Live Music Show</h3></div></li>
-            <li><span><img src={CDimg} alt="Cowboy Drive Logo" className="cdImg" /></span><div><h3>21+ Live Music Show</h3></div></li>
+			  <li><span className="" ></span><div><h3 className="img1Words" >Corporate, Wedding, Family or 21+ Music</h3><div className="jhImg"></div></div> </li>
+			  <li><span className="" ></span><div><h3 className="img1Words" >Family Friendly Live Music Show</h3><div className="jhImg"><img src={JHimg} alt="J&Heather Logo" /></div></div> </li>
+			  <li><span className="" ></span><div><h3 className="img1Words" >21+ Live Music Show</h3><div className=""><img src={CDimg} alt="Cowboy Drive Logo" className="cdImg" /></div></div> </li>
             <li><span>Open Mics</span><div><h3>Open Mics</h3></div></li>
             <li><span>Mobile Karaoke</span><div><h3>Mobile Karaoke</h3></div></li>
             <li><span>Mobile DJ</span><div><h3>Mobile DJ</h3></div></li>
