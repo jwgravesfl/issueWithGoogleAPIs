@@ -8,6 +8,17 @@ import Page1 from './components/Page1'
 import Page2 from './components/Page2'
 import Page3 from './components/Page3'
 
+import styled from 'styled-components'
+
+const AppDiv = styled.div `
+    .app {
+      text-align: center;
+    }
+
+    #mainViewer {
+    }
+`
+
 class App extends Component {
   state = {
     loading: true,
@@ -15,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-      <div className="app" >
+      <AppDiv className="app" >
         <NavBar />
             <div id="mainViewer" className="row">
               <Switch>
@@ -25,7 +36,7 @@ class App extends Component {
                 <Route  path='/page3' component={Page3} />
               </Switch>
             </div>
-        </div> 
+        </AppDiv> 
         
       </BrowserRouter>
 

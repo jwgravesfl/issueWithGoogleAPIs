@@ -1,9 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Page2 extends Component {
-  render() {
-    return (
-      <div id="about" className="bg-secondary page2" >
+import styled from 'styled-components'
+
+const Page2Div = styled.div `
+    .page2 {
+      padding-top: 3vh;
+      padding-bottom: 3vh;
+    }
+`
+
+const Page2 = () => (
+    <Page2Div id="about" className="bg-secondary page2" >
       <section className="">
       <div className="container">
         <div className="row">
@@ -16,7 +23,7 @@ export default class Page2 extends Component {
         </div>
       </div>
     </section>
-      </div>
-    )
-  }
-}
+  </Page2Div>
+)
+
+export default Page2

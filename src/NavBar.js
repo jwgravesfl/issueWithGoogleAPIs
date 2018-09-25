@@ -5,6 +5,35 @@ import { NavLink, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem} fr
 import {Link} from 'react-router-dom'
 import logoImg from './assets/RevelerLogo.png'
 
+import styled from 'styled-components'
+
+const NavBarDiv = styled.div `
+    .tsmNavBar {
+      z-index: 2;
+      color: black;
+
+      img {
+        height: 12vw;
+      }
+    }
+
+    .navBarBrand {
+      color: black;
+      z-index: 2;
+    }
+
+    .tsmNavBarNavMenu {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    .navBarToggler {
+    z-index: 2;
+    color: white;
+    }
+`
+
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -24,7 +53,7 @@ export default class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <NavBarDiv>
         <Navbar light className="tsmNavBar text-white bg-none navbar navbar-expand-lg navbar-light fixed-top" >
         <div className="">
         <NavbarToggler onClick={this.toggleNavbar} className="mr-2 navBarToggler" /> 
@@ -56,7 +85,7 @@ export default class NavBar extends React.Component {
           </Collapse>
           </div>
         </Navbar>
-      </div>
+      </NavBarDiv>
     );
   }
 }
