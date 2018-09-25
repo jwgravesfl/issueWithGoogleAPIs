@@ -25,20 +25,20 @@ class App extends Component {
   }
   render() {
     return (
-      <BrowserRouter>
+      
       <AppDiv className="app" >
         <NavBar />
- 
+        <BrowserRouter>
               <Switch>
                 <Route path='/' exact component={Home} />
                 <Route  path='/page1' component={Page1} />
                 <Route  path='/page2' component={Page2} />
                 <Route  path='/page3' component={Page3} />
               </Switch>
-
+              </BrowserRouter>
         </AppDiv> 
         
-      </BrowserRouter>
+     
 
     );
   }
