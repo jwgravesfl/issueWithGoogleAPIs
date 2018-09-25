@@ -1,7 +1,7 @@
 
 
 import React from 'react';
-import { NavLink, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem} from 'reactstrap';
+import {Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem} from 'reactstrap';
 import {Link} from 'react-router-dom'
 import logoImg from './assets/RevelerLogo.png'
 
@@ -62,24 +62,24 @@ export default class NavBar extends React.Component {
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar className="tsmNavBarNavMenu nav justify-content-end" >
               <NavItem>
-                <NavLink>
-                <Link to="/page1">
+                <Link to="/">
                    Home  
                 </Link>
-                </NavLink>
               </NavItem>
              <NavItem>
-                <NavLink><Link to="/page2">
+                <Link to="/page1">
                     Page 1  
                 </Link>
-                </NavLink>
+                
               </NavItem>
               <NavItem>
-              <NavLink><Link to="/page3">
+                <Link to="/page2">
+                    Page 2  
+                </Link>
+              </NavItem>
+              <NavItem><Link to="/page3">
                     Page 2
                 </Link>
-                </NavLink>
-                
               </NavItem>
             </Nav>
           </Collapse>

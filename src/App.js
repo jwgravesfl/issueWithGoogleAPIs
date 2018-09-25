@@ -28,14 +28,14 @@ class App extends Component {
       <BrowserRouter>
       <AppDiv className="app" >
         <NavBar />
-            <div id="mainViewer" className="row">
+ 
               <Switch>
                 <Route path='/' exact component={Home} />
                 <Route  path='/page1' component={Page1} />
                 <Route  path='/page2' component={Page2} />
                 <Route  path='/page3' component={Page3} />
               </Switch>
-            </div>
+
         </AppDiv> 
         
       </BrowserRouter>
