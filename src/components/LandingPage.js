@@ -598,6 +598,29 @@ p.codrops-demos a.current-demo:hover{
 .bgSlideshowPage {
 }
 
+
+.page1 {
+}
+
+.revelerLogoPage1 {
+
+  img {
+	width: 37vw;
+  }
+}
+
+.wordsPage1 {
+  background:rgba(0,0,0,0.5);
+  font-size: 250%;
+  font-family: 'Fjalla One', sans-serif;
+
+	@media (max-width: 1200px) {
+	  font-size: 180%;
+	  }
+	@media (max-width: 700px) {
+		font-size: 120%;
+		}
+}
 `
 
 export default class LandingPage extends Component {

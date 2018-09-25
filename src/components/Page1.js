@@ -7,28 +7,28 @@ import landingPageBGimg from '../assets/landingPage.jpg'
 import styled from 'styled-components'
 
 const Page1Div = styled.div `
-    .page1 {
-    }
+.page1 {
+}
 
-    .revelerLogoPage1 {
+.revelerLogoPage1 {
 
-      img {
-        width: 37vw;
+  img {
+    width: 37vw;
+  }
+}
+
+.wordsPage1 {
+  background:rgba(0,0,0,0.5);
+  font-size: 250%;
+  font-family: 'Fjalla One', sans-serif;
+
+    @media (max-width: 1200px) {
+      font-size: 180%;
       }
-    }
-
-    .wordsPage1 {
-      background:rgba(0,0,0,0.5);
-      font-size: 250%;
-      font-family: 'Fjalla One', sans-serif;
-
-        @media (max-width: 1200px) {
-          font-size: 180%;
-          }
-        @media (max-width: 700px) {
-            font-size: 120%;
-            }
-    }
+    @media (max-width: 700px) {
+        font-size: 120%;
+        }
+}
 
     header.masthead {
       width: 100vw;
