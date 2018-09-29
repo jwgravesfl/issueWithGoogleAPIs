@@ -2,7 +2,7 @@
   "name": "topshelfmusic",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jwgravesfl.github.io/revelermusic",
+  "homepage": "https://revelermusic.com",
   "dependencies": {
     "bootstrap": "^4.1.3",
     "eslint": "^5.5.0",
