@@ -28,7 +28,7 @@ class App extends Component {
       
       
         
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
         <AppDiv className="app" >
          <NavBar />
               <Switch>
@@ -38,7 +38,7 @@ class App extends Component {
                 <Route  path='/page3' component={Page3} />
               </Switch>
               </AppDiv> 
-              </BrowserRouter>
+              </HashRouter>
         
         
      
